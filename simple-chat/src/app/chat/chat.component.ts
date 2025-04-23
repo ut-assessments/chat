@@ -40,20 +40,26 @@ export class ChatComponent {
     }
   ];
 
-  currentChat = [
-    {
+  currentChat = {
+    chatInfo: {
       name: 'Amy',
-      me: false,
-      message: 'Here are your top 3 answers: 1. Make it good, 2. Make it fast, 3. Make it cheap.',
-      time: '7:21 pm',
-      active: true
+      role: 'Marketing',
     },
-    {
-      name: 'You',
-      me: true,
-      message: 'Thank you for providing these. Please tell me more about the project.',
-      time: '1:02 pm',
-      active: false
-    }
-  ]
+    messages: [
+      {
+        name: 'Amy',
+        me: false,
+        message: 'Here are your top 3 answers: 1. Make it good, 2. Make it fast, 3. Make it cheap.',
+        time: '7:21 pm',
+        active: true
+      },
+      {
+        name: 'You',
+        me: true,
+        message: 'Thank you for providing these. Please tell me more about the project.',
+        time: '1:02 pm',
+        active: false
+      }
+    ]
+  }
 }
